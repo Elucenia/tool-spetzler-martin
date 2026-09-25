@@ -1,0 +1,53 @@
+[
+  {
+    "label": "Nidus de 2 cm, área não eloquente, drenagem superficial: grau I",
+    "input": {
+      "tamanho": "1"
+    },
+    "expected": {
+      "score": 1,
+      "level": "low",
+      "verdict": "classe A"
+    },
+    "originalInput": {
+      "tamanho": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Nidus de 4 cm em área motora, drenagem superficial: grau III",
+    "input": {
+      "tamanho": "2",
+      "eloquente": true
+    },
+    "expected": {
+      "score": 3,
+      "level": "mid",
+      "verdict": "classe B"
+    },
+    "originalInput": {
+      "tamanho": "2",
+      "eloquente": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Nidus de 7 cm, eloquente, drenagem profunda: grau V",
+    "input": {
+      "tamanho": "3",
+      "eloquente": true,
+      "profunda": true
+    },
+    "expected": {
+      "score": 5,
+      "level": "high",
+      "verdict": "classe C"
+    },
+    "originalInput": {
+      "tamanho": "3",
+      "eloquente": true,
+      "profunda": true
+    },
+    "expandedZeroOptions": []
+  }
+]

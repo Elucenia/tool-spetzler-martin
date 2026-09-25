@@ -1,0 +1,242 @@
+{
+  "tool": {
+    "id": "spetzler-martin",
+    "title": "Escala de Spetzler-Martin",
+    "short": "Risco cirúrgico da malformação arteriovenosa",
+    "spec": [
+      "neurocirurgia",
+      "radiologia-e-diagnostico-por-imagem",
+      "neurologia"
+    ],
+    "desc": "Escala de Spetzler-Martin: grau I a V da malformação arteriovenosa cerebral por tamanho, eloquência e drenagem venosa, com a classe de Spetzler-Ponce.",
+    "lead": "Gradua o risco da ressecção cirúrgica de uma malformação arteriovenosa cerebral pelo tamanho do nidus, pela eloquência da área e pelo tipo de drenagem venosa.",
+    "fields": [
+      [
+        "tamanho",
+        "Maior diâmetro do nidus",
+        "radio",
+        {
+          "opts": {
+            "1": "&lt; 3 cm",
+            "2": "3 a 6 cm",
+            "3": "&gt; 6 cm"
+          }
+        }
+      ],
+      [
+        "eloquente",
+        "Área eloquente adjacente (córtex sensitivo-motor, linguagem ou visual; hipotálamo, tálamo, cápsula interna, tronco, pedúnculos cerebelares, núcleos cerebelares profundos)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "profunda",
+        "Drenagem venosa profunda (qualquer componente)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "score": {
+      "label": "Spetzler-Martin",
+      "unit": "grau (1 a 5)",
+      "bands": [
+        [
+          1,
+          "low",
+          "Grau I (classe A de Spetzler-Ponce)",
+          "Classe A: a ressecção microcirúrgica costuma ser o tratamento indicado."
+        ],
+        [
+          2,
+          "low",
+          "Grau II (classe A de Spetzler-Ponce)",
+          "Classe A: a ressecção microcirúrgica costuma ser o tratamento indicado."
+        ],
+        [
+          3,
+          "mid",
+          "Grau III (classe B de Spetzler-Ponce)",
+          "Classe B: tratamento multimodal (cirurgia, embolização, radiocirurgia) individualizado."
+        ],
+        [
+          4,
+          "high",
+          "Grau IV (classe C de Spetzler-Ponce)",
+          "Classe C: em geral, observação; tratar em hemorragias repetidas, déficit progressivo, aneurismas associados ou sintomas de roubo."
+        ],
+        [
+          5,
+          "high",
+          "Grau V (classe C de Spetzler-Ponce)",
+          "Classe C: em geral, observação; tratar em hemorragias repetidas, déficit progressivo, aneurismas associados ou sintomas de roubo."
+        ]
+      ]
+    },
+    "formula": "<p>Tamanho: &lt; 3 cm = 1, 3 a 6 cm = 2, &gt; 6 cm = 3 · Área eloquente = 1 · Drenagem venosa profunda = 1. O grau é a soma (I a V).</p><p><strong>Spetzler-Ponce (2011):</strong> classe A = graus I e II; classe B = grau III; classe C = graus IV e V.</p>",
+    "table": [
+      [
+        "Grau",
+        "Classe de Spetzler-Ponce",
+        "Conduta geral"
+      ],
+      [
+        "I e II",
+        "A",
+        "Ressecção microcirúrgica"
+      ],
+      [
+        "III",
+        "B",
+        "Tratamento multimodal"
+      ],
+      [
+        "IV e V",
+        "C",
+        "Observação (exceto situações específicas)"
+      ]
+    ],
+    "table_note": "Lesões inoperáveis (ex.: envolvimento holoemisférico, tronco) foram descritas originalmente como grau VI.",
+    "tips": [
+      "Meça o nidus na angiografia (padrão) ou na ressonância, excluindo as veias de drenagem e as artérias nutridoras.",
+      "Drenagem venosa é “profunda” se qualquer veia drena para o sistema profundo (veias cerebrais internas, basais, pré-central do cerebelo); nas lesões da fossa posterior, só a drenagem para seios transverso e reto via veias hemisféricas cerebelares conta como superficial.",
+      "O grau III é heterogêneo: a escala suplementar de Lawton-Young (idade, ruptura prévia, nidus difuso) refina o risco cirúrgico.",
+      "O escore estima risco da <strong>cirurgia</strong>, não o risco de sangramento da malformação sem tratamento."
+    ],
+    "sources": [
+      [
+        "Spetzler RF, Martin NA. A proposed grading system for arteriovenous malformations. J Neurosurg, 1986.",
+        "https://doi.org/10.3171/jns.1986.65.4.0476"
+      ],
+      [
+        "Spetzler RF, Ponce FA. A 3-tier classification of cerebral arteriovenous malformations. J Neurosurg, 2011.",
+        "https://doi.org/10.3171/2010.8.JNS10663"
+      ]
+    ],
+    "cases": [
+      [
+        "Nidus de 2 cm, área não eloquente, drenagem superficial: grau I",
+        {
+          "tamanho": "1"
+        },
+        {
+          "score": 1,
+          "level": "low",
+          "verdict": "classe A"
+        }
+      ],
+      [
+        "Nidus de 4 cm em área motora, drenagem superficial: grau III",
+        {
+          "tamanho": "2",
+          "eloquente": true
+        },
+        {
+          "score": 3,
+          "level": "mid",
+          "verdict": "classe B"
+        }
+      ],
+      [
+        "Nidus de 7 cm, eloquente, drenagem profunda: grau V",
+        {
+          "tamanho": "3",
+          "eloquente": true,
+          "profunda": true
+        },
+        {
+          "score": 5,
+          "level": "high",
+          "verdict": "classe C"
+        }
+      ]
+    ],
+    "batch": "neuro-mente",
+    "kind": "Escore",
+    "config": {
+      "unit": "grau (1 a 5)",
+      "label": "Spetzler-Martin",
+      "fields": [
+        [
+          "tamanho",
+          "radio",
+          0
+        ],
+        [
+          "eloquente",
+          "chk",
+          1
+        ],
+        [
+          "profunda",
+          "chk",
+          1
+        ]
+      ],
+      "bands": [
+        [
+          1,
+          "low",
+          "Grau I (classe A de Spetzler-Ponce)",
+          "Classe A: a ressecção microcirúrgica costuma ser o tratamento indicado."
+        ],
+        [
+          2,
+          "low",
+          "Grau II (classe A de Spetzler-Ponce)",
+          "Classe A: a ressecção microcirúrgica costuma ser o tratamento indicado."
+        ],
+        [
+          3,
+          "mid",
+          "Grau III (classe B de Spetzler-Ponce)",
+          "Classe B: tratamento multimodal (cirurgia, embolização, radiocirurgia) individualizado."
+        ],
+        [
+          4,
+          "high",
+          "Grau IV (classe C de Spetzler-Ponce)",
+          "Classe C: em geral, observação; tratar em hemorragias repetidas, déficit progressivo, aneurismas associados ou sintomas de roubo."
+        ],
+        [
+          5,
+          "high",
+          "Grau V (classe C de Spetzler-Ponce)",
+          "Classe C: em geral, observação; tratar em hemorragias repetidas, déficit progressivo, aneurismas associados ou sintomas de roubo."
+        ]
+      ]
+    },
+    "areaId": "neuro-mente",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/neuro-mente.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/neuro-mente.php",
+    "sha256": "3ce3a7987a3ec63938e5f21d8d24ec7f7f8880c1b54458ef7046807a89221cac",
+    "bytes": 102818
+  },
+  "clinicalValidation": "not-performed"
+}
