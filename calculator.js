@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-spetzler-martin · Elucenia · https://github.com/Elucenia/tool-spetzler-martin
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"spetzler-martin","title":"Escala de Spetzler-Martin","fields":[["tamanho","Maior diâmetro do nidus","radio",{"opts":{"1":"&lt; 3 cm","2":"3 a 6 cm","3":"&gt; 6 cm"}}],["eloquente","Área eloquente adjacente (córtex sensitivo-motor, linguagem ou visual; hipotálamo, tálamo, cápsula interna, tronco, pedúnculos cerebelares, núcleos cerebelares profundos)","chk",{"pts":1}],["profunda","Drenagem venosa profunda (qualquer componente)","chk",{"pts":1}]],"config":{"unit":"grau (1 a 5)","label":"Spetzler-Martin","fields":[["tamanho","radio",0],["eloquente","chk",1],["profunda","chk",1]],"bands":[[1,"low","Grau I (classe A de Spetzler-Ponce)","Classe A: a ressecção microcirúrgica costuma ser o tratamento indicado."],[2,"low","Grau II (classe A de Spetzler-Ponce)","Classe A: a ressecção microcirúrgica costuma ser o tratamento indicado."],[3,"mid","Grau III (classe B de Spetzler-Ponce)","Classe B: tratamento multimodal (cirurgia, embolização, radiocirurgia) individualizado."],[4,"high","Grau IV (classe C de Spetzler-Ponce)","Classe C: em geral, observação; tratar em hemorragias repetidas, déficit progressivo, aneurismas associados ou sintomas de roubo."],[5,"high","Grau V (classe C de Spetzler-Ponce)","Classe C: em geral, observação; tratar em hemorragias repetidas, déficit progressivo, aneurismas associados ou sintomas de roubo."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
