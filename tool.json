@@ -3,13 +3,14 @@
     "id": "spetzler-martin",
     "title": "Escala de Spetzler-Martin",
     "short": "Risco cirúrgico da malformação arteriovenosa",
+    "desc": "Escala de Spetzler-Martin: grau I a V da malformação arteriovenosa cerebral por tamanho, eloquência e drenagem venosa, com a classe de Spetzler-Ponce.",
+    "lead": "Gradua o risco da ressecção cirúrgica de uma malformação arteriovenosa cerebral pelo tamanho do nidus, pela eloquência da área e pelo tipo de drenagem venosa.",
+    "kind": "Escore",
     "spec": [
       "neurocirurgia",
       "radiologia-e-diagnostico-por-imagem",
       "neurologia"
     ],
-    "desc": "Escala de Spetzler-Martin: grau I a V da malformação arteriovenosa cerebral por tamanho, eloquência e drenagem venosa, com a classe de Spetzler-Ponce.",
-    "lead": "Gradua o risco da ressecção cirúrgica de uma malformação arteriovenosa cerebral pelo tamanho do nidus, pela eloquência da área e pelo tipo de drenagem venosa.",
     "fields": [
       [
         "tamanho",
@@ -27,85 +28,16 @@
         "eloquente",
         "Área eloquente adjacente (córtex sensitivo-motor, linguagem ou visual; hipotálamo, tálamo, cápsula interna, tronco, pedúnculos cerebelares, núcleos cerebelares profundos)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "profunda",
         "Drenagem venosa profunda (qualquer componente)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "Spetzler-Martin",
-      "unit": "grau (1 a 5)",
-      "bands": [
-        [
-          1,
-          "low",
-          "Grau I (classe A de Spetzler-Ponce)",
-          "Classe A: a ressecção microcirúrgica costuma ser o tratamento indicado."
-        ],
-        [
-          2,
-          "low",
-          "Grau II (classe A de Spetzler-Ponce)",
-          "Classe A: a ressecção microcirúrgica costuma ser o tratamento indicado."
-        ],
-        [
-          3,
-          "mid",
-          "Grau III (classe B de Spetzler-Ponce)",
-          "Classe B: tratamento multimodal (cirurgia, embolização, radiocirurgia) individualizado."
-        ],
-        [
-          4,
-          "high",
-          "Grau IV (classe C de Spetzler-Ponce)",
-          "Classe C: em geral, observação; tratar em hemorragias repetidas, déficit progressivo, aneurismas associados ou sintomas de roubo."
-        ],
-        [
-          5,
-          "high",
-          "Grau V (classe C de Spetzler-Ponce)",
-          "Classe C: em geral, observação; tratar em hemorragias repetidas, déficit progressivo, aneurismas associados ou sintomas de roubo."
-        ]
-      ]
-    },
     "formula": "<p>Tamanho: &lt; 3 cm = 1, 3 a 6 cm = 2, &gt; 6 cm = 3 · Área eloquente = 1 · Drenagem venosa profunda = 1. O grau é a soma (I a V).</p><p><strong>Spetzler-Ponce (2011):</strong> classe A = graus I e II; classe B = grau III; classe C = graus IV e V.</p>",
-    "table": [
-      [
-        "Grau",
-        "Classe de Spetzler-Ponce",
-        "Conduta geral"
-      ],
-      [
-        "I e II",
-        "A",
-        "Ressecção microcirúrgica"
-      ],
-      [
-        "III",
-        "B",
-        "Tratamento multimodal"
-      ],
-      [
-        "IV e V",
-        "C",
-        "Observação (exceto situações específicas)"
-      ]
-    ],
-    "table_note": "Lesões inoperáveis (ex.: envolvimento holoemisférico, tronco) foram descritas originalmente como grau VI.",
-    "tips": [
-      "Meça o nidus na angiografia (padrão) ou na ressonância, excluindo as veias de drenagem e as artérias nutridoras.",
-      "Drenagem venosa é “profunda” se qualquer veia drena para o sistema profundo (veias cerebrais internas, basais, pré-central do cerebelo); nas lesões da fossa posterior, só a drenagem para seios transverso e reto via veias hemisféricas cerebelares conta como superficial.",
-      "O grau III é heterogêneo: a escala suplementar de Lawton-Young (idade, ruptura prévia, nidus difuso) refina o risco cirúrgico.",
-      "O escore estima risco da <strong>cirurgia</strong>, não o risco de sangramento da malformação sem tratamento."
-    ],
     "sources": [
       [
         "Spetzler RF, Martin NA. A proposed grading system for arteriovenous malformations. J Neurosurg, 1986.",
@@ -154,61 +86,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "grau (1 a 5)",
-      "label": "Spetzler-Martin",
-      "fields": [
-        [
-          "tamanho",
-          "radio",
-          0
-        ],
-        [
-          "eloquente",
-          "chk",
-          1
-        ],
-        [
-          "profunda",
-          "chk",
-          1
-        ]
-      ],
-      "bands": [
-        [
-          1,
-          "low",
-          "Grau I (classe A de Spetzler-Ponce)",
-          "Classe A: a ressecção microcirúrgica costuma ser o tratamento indicado."
-        ],
-        [
-          2,
-          "low",
-          "Grau II (classe A de Spetzler-Ponce)",
-          "Classe A: a ressecção microcirúrgica costuma ser o tratamento indicado."
-        ],
-        [
-          3,
-          "mid",
-          "Grau III (classe B de Spetzler-Ponce)",
-          "Classe B: tratamento multimodal (cirurgia, embolização, radiocirurgia) individualizado."
-        ],
-        [
-          4,
-          "high",
-          "Grau IV (classe C de Spetzler-Ponce)",
-          "Classe C: em geral, observação; tratar em hemorragias repetidas, déficit progressivo, aneurismas associados ou sintomas de roubo."
-        ],
-        [
-          5,
-          "high",
-          "Grau V (classe C de Spetzler-Ponce)",
-          "Classe C: em geral, observação; tratar em hemorragias repetidas, déficit progressivo, aneurismas associados ou sintomas de roubo."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -217,17 +94,393 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T20:33:44.946Z",
+      "total": 12,
+      "passed": 12,
+      "sourceRowCount": 12,
+      "uniqueApiInputCount": 12,
+      "sourceContextCount": 12,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "30f8675b0ad322807fee3d857991c83c8d465710948d398b58a8625a83d4569e",
+        "total": 12,
+        "bankRowCount": 12,
+        "uniqueApiInputCount": 12,
+        "sourceContextCount": 12,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/root-six-independent-expectations-final29.json",
+            "sha256": "92f70c18f7b9f7b96089197af3288c3e7695f1c8e219ef036d4f0989bddfb125"
+          },
+          {
+            "file": "reports/review-20261003/root-six-primary-source-review-final29-r2.json",
+            "sha256": "17b72c7bd1a468ac18841cebd1be194208e5e2abe2ff80c948ca4c54475d44a7"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/root-six-independent-source-check-final29.json",
+          "sha256": "acfea8f09941bc68754ef96e0f3080aa0e240f68cd3ed04f10b51f796a26a043"
+        }
+      },
+      "inputIdentity": "Exact complete immutable API input objects; not execution/runtime counts",
+      "scope": "All12 institutional formselected-point combinations, numeric totalI–V only",
+      "sources": [
+        {
+          "review": {
+            "file": "reports/review-20261003/root-six-primary-source-review-final29-r2.json",
+            "sha256": "17b72c7bd1a468ac18841cebd1be194208e5e2abe2ff80c948ca4c54475d44a7"
+          },
+          "item": {
+            "id": "spetzler-martin",
+            "edition": "1986 identity and official Coriell/NINDS institutional score form (undated), three selected points",
+            "reads": [
+              {
+                "url": "https://www.coriell.org/0/PDF/NINDS/smgs.pdf",
+                "read": "Official institution PDF text directly retrieved by web tool: lesion size three pointcodes, eloquence and any deep drainage. Shell archivefailed certificateverification; no disableSSL or claim archived PDF."
+              }
+            ],
+            "constants": {
+              "size": [
+                1,
+                2,
+                3
+              ],
+              "eloquence": [
+                0,
+                1
+              ],
+              "deep": [
+                0,
+                1
+              ]
+            },
+            "limitations": [
+              "Only the explicitly tested numeric/Boolean contracts; no clinical, diagnostic, prognostic, source-rights or professional translation approval. Eligibility and rubric equivalence are separate.",
+              "Original1986 fullpaper not retrieved. Institutional form matches1/2/3 and two0/1 points; this does not certify imaging-to-grade assignment or Ponce2011 classes. OriginalabstractincludesVI; localI–V only remains explicit. Ambiguous malformed size thresholds in primary2007 reproducedTable3 were not used as source oracle."
+            ]
+          },
+          "originalSourceReview": {
+            "file": "root-six-primary-source-review-final29.json",
+            "sha256": "5bc754345b3db4ae9521890531cd0e244684bfd168ab88b0b882045fc7b7f036"
+          },
+          "erratum": "Rockall original>100 narrative is retained in the original review; primaryR2 corrects it to≥100 without changing oracle, inputs or code."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/root-six-independent-source-check-final29.json",
+      "evidenceSha256": "acfea8f09941bc68754ef96e0f3080aa0e240f68cd3ed04f10b51f796a26a043",
+      "independentPeer": {
+        "status": "reviewed",
+        "file": "reports/review-20261003/root-six-independent-peer-publication-final29-r2.json",
+        "sha256": "9a364220970a26f43c0d738bb7f1b1dfe96d33f064478c7d6c830c1dc0f72518",
+        "scope": "Independent numeric/source-scope peer only",
+        "factualSourceAmendment": {
+          "file": "reports/review-20261003/root-six-publication-own-source-review-final29-r2.json",
+          "sha256": "c5b320651855564578dbb871a91bd9770c09594497b40ea0560be84d75d8139c"
+        }
+      },
+      "metadataPackagingPeer": {
+        "status": "reviewed",
+        "file": "reports/review-20261003/root-six-bank-packaging-peer-final29-r2.json",
+        "sha256": "e1bfe5287b4cc1defcce6c29ecc9d901cf9b5be19aeb047499da56273b9feb69",
+        "scope": "Independent technical bank/helper packaging and frozen raw-output replay; no clinical, professional-language, source-rights or full-method approval.",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "originalSourceExecutions": 108,
+      "freshPreparationSampleExecutions": 12,
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/spetzler-martin/calculator.js",
+          "sha256": "8747632ddcfb882268d623c16baa1282136f8681680e666169b982a6d7ef7760",
+          "bytes": 5339
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/spetzler-martin/calculator.js",
+          "sha256": "8747632ddcfb882268d623c16baa1282136f8681680e666169b982a6d7ef7760",
+          "bytes": 5339
+        },
+        {
+          "file": "apps/command-center/private/tool-code/spetzler-martin/calculator.js",
+          "sha256": "8747632ddcfb882268d623c16baa1282136f8681680e666169b982a6d7ef7760",
+          "bytes": 5339
+        }
+      ],
+      "qualifications": [
+        "Only the explicitly tested numeric/Boolean contracts; no clinical, diagnostic, prognostic, source-rights or professional translation approval. Eligibility and rubric equivalence are separate.",
+        "Original1986 fullpaper not retrieved. Institutional form matches1/2/3 and two0/1 points; this does not certify imaging-to-grade assignment or Ponce2011 classes. OriginalabstractincludesVI; localI–V only remains explicit. Ambiguous malformed size thresholds in primary2007 reproducedTable3 were not used as source oracle.",
+        "No clinical categories/main/severity/advice/diagnosis/prognostic performance/source-rights or professional-language approval. Full numeric observations are historical frozen Node/VM/Chromium; this preparation adds only bounded fresh Node samples.",
+        "Ottawa primary Boolean result and separately counted supplied true findings are not a validated point-risk score. Rockall pre-score is the source point-code sum; preEndoscopic context is not an exposed clinical classifier.",
+        "Whole catalogues are not staged; only these two evidence leaves per ID and complete banks are owned. Source28/six-neuromotor29 helper branches and counters must be composed separately."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Spetzler Martin 1986:3 fatores, grau I–V; agrupamento Spetzler Ponce 2011 A/B/C",
+    "implementationVersion": "spetzler-martin@native-2026-10-03+8747632ddcfb",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3760956/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Tamanho: < 3 cm = 1, 3 a 6 cm = 2, > 6 cm = 3 · Área eloquente = 1 · Drenagem venosa profunda = 1. O grau é a soma (I a V). Spetzler-Ponce (2011): classe A = graus I e II; classe B = grau III; classe C = graus IV e V.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "tamanho",
+            "label": "Maior diâmetro do nidus",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "1": "&lt; 3 cm",
+              "2": "3 a 6 cm",
+              "3": "&gt; 6 cm"
+            }
+          },
+          {
+            "key": "eloquente",
+            "label": "Área eloquente adjacente (córtex sensitivo-motor, linguagem ou visual; hipotálamo, tálamo, cápsula interna, tronco, pedúnculos cerebelares, núcleos cerebelares profundos)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "profunda",
+            "label": "Drenagem venosa profunda (qualquer componente)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "f628cb1fc2262eef9de34e6e08523c1ab68fd10cd50540994b5b0eeaaa5b5ece"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Spetzler RF, Martin NA. A proposed grading system for arteriovenous malformations. J Neurosurg, 1986.",
+          "url": "https://doi.org/10.3171/jns.1986.65.4.0476",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A proposed grading system for arteriovenous malformations.",
+            "year": "1986",
+            "firstPublicationDate": "1986-10-01",
+            "doi": "10.3171/jns.1986.65.4.0476",
+            "pmid": "3760956",
+            "journal": "Journal of neurosurgery",
+            "authors": "Spetzler RF, Martin NA."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/3760956/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "c134af289f31023b4bd5441e37ff9ea707a7839325506d827e50a1874f477a68",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Spetzler RF, Ponce FA. A 3-tier classification of cerebral arteriovenous malformations. J Neurosurg, 2011.",
+          "url": "https://doi.org/10.3171/2010.8.JNS10663",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "A 3-tier classification of cerebral arteriovenous malformations. Clinical article.",
+            "year": "2011",
+            "firstPublicationDate": "2010-10-08",
+            "doi": "10.3171/2010.8.jns10663",
+            "pmid": "20932095",
+            "journal": "Journal of neurosurgery",
+            "authors": "Spetzler RF, Ponce FA."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/20932095/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "c513b16e6d646250a378c7f588b42a588ebcd2a6d2ba065755da17a4b2f7da84",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T20:33:44.946Z",
+        "total": 12,
+        "passed": 12,
+        "sourceRowCount": 12,
+        "uniqueApiInputCount": 12,
+        "sourceContextCount": 12,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "30f8675b0ad322807fee3d857991c83c8d465710948d398b58a8625a83d4569e",
+          "total": 12,
+          "bankRowCount": 12,
+          "uniqueApiInputCount": 12,
+          "sourceContextCount": 12,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/root-six-independent-expectations-final29.json",
+              "sha256": "92f70c18f7b9f7b96089197af3288c3e7695f1c8e219ef036d4f0989bddfb125"
+            },
+            {
+              "file": "reports/review-20261003/root-six-primary-source-review-final29-r2.json",
+              "sha256": "17b72c7bd1a468ac18841cebd1be194208e5e2abe2ff80c948ca4c54475d44a7"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/root-six-independent-source-check-final29.json",
+            "sha256": "acfea8f09941bc68754ef96e0f3080aa0e240f68cd3ed04f10b51f796a26a043"
+          }
+        },
+        "inputIdentity": "Exact complete immutable API input objects; not execution/runtime counts",
+        "scope": "All12 institutional formselected-point combinations, numeric totalI–V only",
+        "sources": [
+          {
+            "review": {
+              "file": "reports/review-20261003/root-six-primary-source-review-final29-r2.json",
+              "sha256": "17b72c7bd1a468ac18841cebd1be194208e5e2abe2ff80c948ca4c54475d44a7"
+            },
+            "item": {
+              "id": "spetzler-martin",
+              "edition": "1986 identity and official Coriell/NINDS institutional score form (undated), three selected points",
+              "reads": [
+                {
+                  "url": "https://www.coriell.org/0/PDF/NINDS/smgs.pdf",
+                  "read": "Official institution PDF text directly retrieved by web tool: lesion size three pointcodes, eloquence and any deep drainage. Shell archivefailed certificateverification; no disableSSL or claim archived PDF."
+                }
+              ],
+              "constants": {
+                "size": [
+                  1,
+                  2,
+                  3
+                ],
+                "eloquence": [
+                  0,
+                  1
+                ],
+                "deep": [
+                  0,
+                  1
+                ]
+              },
+              "limitations": [
+                "Only the explicitly tested numeric/Boolean contracts; no clinical, diagnostic, prognostic, source-rights or professional translation approval. Eligibility and rubric equivalence are separate.",
+                "Original1986 fullpaper not retrieved. Institutional form matches1/2/3 and two0/1 points; this does not certify imaging-to-grade assignment or Ponce2011 classes. OriginalabstractincludesVI; localI–V only remains explicit. Ambiguous malformed size thresholds in primary2007 reproducedTable3 were not used as source oracle."
+              ]
+            },
+            "originalSourceReview": {
+              "file": "root-six-primary-source-review-final29.json",
+              "sha256": "5bc754345b3db4ae9521890531cd0e244684bfd168ab88b0b882045fc7b7f036"
+            },
+            "erratum": "Rockall original>100 narrative is retained in the original review; primaryR2 corrects it to≥100 without changing oracle, inputs or code."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/root-six-independent-source-check-final29.json",
+        "evidenceSha256": "acfea8f09941bc68754ef96e0f3080aa0e240f68cd3ed04f10b51f796a26a043",
+        "independentPeer": {
+          "status": "reviewed",
+          "file": "reports/review-20261003/root-six-independent-peer-publication-final29-r2.json",
+          "sha256": "9a364220970a26f43c0d738bb7f1b1dfe96d33f064478c7d6c830c1dc0f72518",
+          "scope": "Independent numeric/source-scope peer only",
+          "factualSourceAmendment": {
+            "file": "reports/review-20261003/root-six-publication-own-source-review-final29-r2.json",
+            "sha256": "c5b320651855564578dbb871a91bd9770c09594497b40ea0560be84d75d8139c"
+          }
+        },
+        "metadataPackagingPeer": {
+          "status": "reviewed",
+          "file": "reports/review-20261003/root-six-bank-packaging-peer-final29-r2.json",
+          "sha256": "e1bfe5287b4cc1defcce6c29ecc9d901cf9b5be19aeb047499da56273b9feb69",
+          "scope": "Independent technical bank/helper packaging and frozen raw-output replay; no clinical, professional-language, source-rights or full-method approval.",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "originalSourceExecutions": 108,
+        "freshPreparationSampleExecutions": 12,
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/spetzler-martin/calculator.js",
+            "sha256": "8747632ddcfb882268d623c16baa1282136f8681680e666169b982a6d7ef7760",
+            "bytes": 5339
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/spetzler-martin/calculator.js",
+            "sha256": "8747632ddcfb882268d623c16baa1282136f8681680e666169b982a6d7ef7760",
+            "bytes": 5339
+          },
+          {
+            "file": "apps/command-center/private/tool-code/spetzler-martin/calculator.js",
+            "sha256": "8747632ddcfb882268d623c16baa1282136f8681680e666169b982a6d7ef7760",
+            "bytes": 5339
+          }
+        ],
+        "qualifications": [
+          "Only the explicitly tested numeric/Boolean contracts; no clinical, diagnostic, prognostic, source-rights or professional translation approval. Eligibility and rubric equivalence are separate.",
+          "Original1986 fullpaper not retrieved. Institutional form matches1/2/3 and two0/1 points; this does not certify imaging-to-grade assignment or Ponce2011 classes. OriginalabstractincludesVI; localI–V only remains explicit. Ambiguous malformed size thresholds in primary2007 reproducedTable3 were not used as source oracle.",
+          "No clinical categories/main/severity/advice/diagnosis/prognostic performance/source-rights or professional-language approval. Full numeric observations are historical frozen Node/VM/Chromium; this preparation adds only bounded fresh Node samples.",
+          "Ottawa primary Boolean result and separately counted supplied true findings are not a validated point-risk score. Rockall pre-score is the source point-code sum; preEndoscopic context is not an exposed clinical classifier.",
+          "Whole catalogues are not staged; only these two evidence leaves per ID and complete banks are owned. Source28/six-neuromotor29 helper branches and counters must be composed separately."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "8747632ddcfb882268d623c16baa1282136f8681680e666169b982a6d7ef7760"
+    },
+    "limits": "Classificação de MAV cerebral voltada ao risco cirúrgico. A variante local usa os graus I–V e o agrupamento Spetzler-Ponce A/B/C; o resumo original de 1986 também menciona um sexto grupo. Os resultados de séries cirúrgicas não demonstram desempenho equivalente para outras modalidades de tratamento.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.864Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Os pontos e os cortes dimensionais da tabela original não foram conferidos em texto integral.",
+        "Não foi demonstrada equivalência de prognóstico para radiocirurgia ou terapia endovascular."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/spetzler-martin/calculator.js",
+    "bytes": 5339,
+    "sha256": "8747632ddcfb882268d623c16baa1282136f8681680e666169b982a6d7ef7760"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "32c787576f54e54908bcf0c0431806b280ad6e92072ef53b281ded73ba204db6",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "14344182662c9f60b6632b1e2756c1af3a189d1188752ba4ba941b542fc98761",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "14344182662c9f60b6632b1e2756c1af3a189d1188752ba4ba941b542fc98761",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

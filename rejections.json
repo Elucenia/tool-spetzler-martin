@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tamanho",
+    "input": {
+      "eloquente": false,
+      "profunda": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tamanho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tamanho",
+    "input": {
+      "tamanho": "",
+      "eloquente": false,
+      "profunda": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tamanho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option tamanho",
+    "input": {
+      "tamanho": "__ELUCENIA_INVALID_OPTION__",
+      "eloquente": false,
+      "profunda": false
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "tamanho"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean eloquente",
+    "input": {
+      "tamanho": "1",
+      "eloquente": "2",
+      "profunda": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "eloquente"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean profunda",
+    "input": {
+      "tamanho": "1",
+      "eloquente": false,
+      "profunda": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "profunda"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
