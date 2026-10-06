@@ -71,3 +71,28 @@ tool.json 包含来源、版本和审查范围。examples.json 保留合成输�
 Apache-2.0 仅适用于 ELUCENIA 代码。工具、出版物、翻译和数据的权利仍归各自权利人所有。请保留 LICENSE 和 NOTICE。
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## 已记录的结果
+
+以下信息保留该方法对合成示例的输出，不构成独立的临床验证。
+
+### 1
+
+I级（Spetzler-Ponce A类）
+
+A类：显微外科切除通常是有指征的治疗。
+
+
+### 2
+
+III级（Spetzler-Ponce B类）
+
+B类：个体化多模式治疗（手术、栓塞、放射外科）。
+
+
+### 3
+
+V级（Spetzler-Ponce C类）
+
+C级：一般观察；如有反复出血、进行性神经功能缺损、相关动脉瘤或盗血症状，则治疗。
+

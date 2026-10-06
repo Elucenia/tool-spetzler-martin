@@ -1,0 +1,172 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "spetzler-martin",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "5941a82ca8b881839b6fe28c60397542a0bd0d6a",
+    "oldEngineSha256": "8747632ddcfb882268d623c16baa1282136f8681680e666169b982a6d7ef7760",
+    "currentEngineSha256": "e08a2a15a0da7d4d2f40045b437b6730a976ff73499f7c880f5674f4cdb81e48"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Nidus de 2 cm, área não eloquente, drenagem superficial: grau I",
+      "input": {
+        "tamanho": "1",
+        "eloquente": false,
+        "profunda": false
+      },
+      "publicOutput": {
+        "id": "spetzler-martin",
+        "main": [
+          "1",
+          "grau (1 a 5)"
+        ],
+        "label": "Spetzler-Martin",
+        "raw": {
+          "score": 1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 1,
+        "level": "low",
+        "verdict": "classe A"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "1",
+          "grau (1 a 5)"
+        ],
+        "label": "Spetzler-Martin",
+        "level": "low",
+        "verdict": "Grau I (classe A de Spetzler-Ponce)",
+        "note": "Classe A: a ressecção microcirúrgica costuma ser o tratamento indicado.",
+        "raw": {
+          "score": 1
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Nidus de 4 cm em área motora, drenagem superficial: grau III",
+      "input": {
+        "tamanho": "2",
+        "eloquente": true,
+        "profunda": false
+      },
+      "publicOutput": {
+        "id": "spetzler-martin",
+        "main": [
+          "3",
+          "grau (1 a 5)"
+        ],
+        "label": "Spetzler-Martin",
+        "raw": {
+          "score": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 3,
+        "level": "mid",
+        "verdict": "classe B"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          "grau (1 a 5)"
+        ],
+        "label": "Spetzler-Martin",
+        "level": "mid",
+        "verdict": "Grau III (classe B de Spetzler-Ponce)",
+        "note": "Classe B: tratamento multimodal (cirurgia, embolização, radiocirurgia) individualizado.",
+        "raw": {
+          "score": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Nidus de 7 cm, eloquente, drenagem profunda: grau V",
+      "input": {
+        "tamanho": "3",
+        "eloquente": true,
+        "profunda": true
+      },
+      "publicOutput": {
+        "id": "spetzler-martin",
+        "main": [
+          "5",
+          "grau (1 a 5)"
+        ],
+        "label": "Spetzler-Martin",
+        "raw": {
+          "score": 5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 5,
+        "level": "high",
+        "verdict": "classe C"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "5",
+          "grau (1 a 5)"
+        ],
+        "label": "Spetzler-Martin",
+        "level": "high",
+        "verdict": "Grau V (classe C de Spetzler-Ponce)",
+        "note": "Classe C: em geral, observação; tratar em hemorragias repetidas, déficit progressivo, aneurismas associados ou sintomas de roubo.",
+        "raw": {
+          "score": 5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

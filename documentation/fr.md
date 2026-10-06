@@ -71,3 +71,28 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Grade I (classe A de Spetzler-Ponce)
+
+Classe A : la résection microchirurgicale est habituellement le traitement indiqué.
+
+
+### 2
+
+Grade III (classe B de Spetzler-Ponce)
+
+Classe B : traitement multimodal individualisé (chirurgie, embolisation, radiochirurgie).
+
+
+### 3
+
+Grade V (classe C de Spetzler-Ponce)
+
+Classe C : en général, observation ; traiter en cas d’hémorragies répétées, de déficit progressif, d’anévrismes associés ou de symptômes de vol.
+

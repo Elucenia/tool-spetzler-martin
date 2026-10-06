@@ -225,7 +225,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Spetzler Martin 1986:3 fatores, grau I–V; agrupamento Spetzler Ponce 2011 A/B/C",
-    "implementationVersion": "spetzler-martin@native-2026-10-03+8747632ddcfb",
+    "implementationVersion": "spetzler-martin@native-2026-10-05+e08a2a15a0da",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/3760956/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -444,7 +444,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "8747632ddcfb882268d623c16baa1282136f8681680e666169b982a6d7ef7760"
+      "implementationHash": "e08a2a15a0da7d4d2f40045b437b6730a976ff73499f7c880f5674f4cdb81e48",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "spetzler-martin@native-2026-10-03+8747632ddcfb",
+          "previousImplementationHash": "8747632ddcfb882268d623c16baa1282136f8681680e666169b982a6d7ef7760",
+          "implementationHash": "e08a2a15a0da7d4d2f40045b437b6730a976ff73499f7c880f5674f4cdb81e48",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "f628cb1fc2262eef9de34e6e08523c1ab68fd10cd50540994b5b0eeaaa5b5ece",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Classificação de MAV cerebral voltada ao risco cirúrgico. A variante local usa os graus I–V e o agrupamento Spetzler-Ponce A/B/C; o resumo original de 1986 também menciona um sexto grupo. Os resultados de séries cirúrgicas não demonstram desempenho equivalente para outras modalidades de tratamento.",
     "sourceLimitEvidence": {
@@ -464,20 +492,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/spetzler-martin/calculator.js",
-    "bytes": 5339,
-    "sha256": "8747632ddcfb882268d623c16baa1282136f8681680e666169b982a6d7ef7760"
+    "bytes": 5544,
+    "sha256": "e08a2a15a0da7d4d2f40045b437b6730a976ff73499f7c880f5674f4cdb81e48"
   },
-  "sourceToolSha256": "32c787576f54e54908bcf0c0431806b280ad6e92072ef53b281ded73ba204db6",
+  "sourceToolSha256": "bb2de69c5ab937d7dba77a5d6f8604c30c19443167d549d93d42ed3af84b7fe1",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "14344182662c9f60b6632b1e2756c1af3a189d1188752ba4ba941b542fc98761",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "14344182662c9f60b6632b1e2756c1af3a189d1188752ba4ba941b542fc98761",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

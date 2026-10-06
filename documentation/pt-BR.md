@@ -71,3 +71,28 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Grau I (classe A de Spetzler-Ponce)
+
+Classe A: a ressecção microcirúrgica costuma ser o tratamento indicado.
+
+
+### 2
+
+Grau III (classe B de Spetzler-Ponce)
+
+Classe B: tratamento multimodal (cirurgia, embolização, radiocirurgia) individualizado.
+
+
+### 3
+
+Grau V (classe C de Spetzler-Ponce)
+
+Classe C: em geral, observação; tratar em hemorragias repetidas, déficit progressivo, aneurismas associados ou sintomas de roubo.
+

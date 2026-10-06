@@ -71,3 +71,28 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Grade I (Spetzler-Ponce class A)
+
+Class A: microsurgical resection is usually the indicated treatment.
+
+
+### 2
+
+Grade III (Spetzler-Ponce class B)
+
+Class B: individualized multimodal treatment (surgery, embolization, radiosurgery).
+
+
+### 3
+
+Grade V (Spetzler-Ponce class C)
+
+Class C: generally observe; treat in repeated hemorrhages, progressive deficit, associated aneurysms, or steal symptoms.
+

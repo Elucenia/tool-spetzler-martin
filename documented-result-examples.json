@@ -1,0 +1,537 @@
+{
+  "id": "spetzler-martin",
+  "implementationVersion": "spetzler-martin@native-2026-10-05+e08a2a15a0da",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Nidus de 2 cm, área não eloquente, drenagem superficial: grau I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grau I (classe A de Spetzler-Ponce)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Classe A: a ressecção microcirúrgica costuma ser o tratamento indicado.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Nidus de 4 cm em área motora, drenagem superficial: grau III",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grau III (classe B de Spetzler-Ponce)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Classe B: tratamento multimodal (cirurgia, embolização, radiocirurgia) individualizado.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Nidus de 7 cm, eloquente, drenagem profunda: grau V",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grau V (classe C de Spetzler-Ponce)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Classe C: em geral, observação; tratar em hemorragias repetidas, déficit progressivo, aneurismas associados ou sintomas de roubo.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Nidus de 2 cm, área não eloquente, drenagem superficial: grau I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grade I (Spetzler-Ponce class A)",
+            "locale": "en",
+            "template": "documented-authored-74a2071733627f0f3fae"
+          },
+          "note": {
+            "text": "Class A: microsurgical resection is usually the indicated treatment.",
+            "locale": "en",
+            "template": "documented-authored-850b2db783833ee216ea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Nidus de 4 cm em área motora, drenagem superficial: grau III",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grade III (Spetzler-Ponce class B)",
+            "locale": "en",
+            "template": "documented-authored-45786bd6fd286af96782"
+          },
+          "note": {
+            "text": "Class B: individualized multimodal treatment (surgery, embolization, radiosurgery).",
+            "locale": "en",
+            "template": "documented-authored-e4a1a00117ceabdfc661"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Nidus de 7 cm, eloquente, drenagem profunda: grau V",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grade V (Spetzler-Ponce class C)",
+            "locale": "en",
+            "template": "documented-authored-2124b58cf4b59ed9adec"
+          },
+          "note": {
+            "text": "Class C: generally observe; treat in repeated hemorrhages, progressive deficit, associated aneurysms, or steal symptoms.",
+            "locale": "en",
+            "template": "documented-authored-86a4e77392e055e9a1bc"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Nidus de 2 cm, área não eloquente, drenagem superficial: grau I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grado I (clase A de Spetzler-Ponce)",
+            "locale": "es",
+            "template": "documented-authored-74a2071733627f0f3fae"
+          },
+          "note": {
+            "text": "Clase A: la resección microquirúrgica suele ser el tratamiento indicado.",
+            "locale": "es",
+            "template": "documented-authored-850b2db783833ee216ea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Nidus de 4 cm em área motora, drenagem superficial: grau III",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grado III (clase B de Spetzler-Ponce)",
+            "locale": "es",
+            "template": "documented-authored-45786bd6fd286af96782"
+          },
+          "note": {
+            "text": "Clase B: tratamiento multimodal individualizado (cirugía, embolización, radiocirugía).",
+            "locale": "es",
+            "template": "documented-authored-e4a1a00117ceabdfc661"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Nidus de 7 cm, eloquente, drenagem profunda: grau V",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grado V (clase C de Spetzler-Ponce)",
+            "locale": "es",
+            "template": "documented-authored-2124b58cf4b59ed9adec"
+          },
+          "note": {
+            "text": "Clase C: en general, observación; tratar en hemorragias repetidas, déficit progresivo, aneurismas asociados o síntomas de robo.",
+            "locale": "es",
+            "template": "documented-authored-86a4e77392e055e9a1bc"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Nidus de 2 cm, área não eloquente, drenagem superficial: grau I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grade I (classe A de Spetzler-Ponce)",
+            "locale": "fr",
+            "template": "documented-authored-74a2071733627f0f3fae"
+          },
+          "note": {
+            "text": "Classe A : la résection microchirurgicale est habituellement le traitement indiqué.",
+            "locale": "fr",
+            "template": "documented-authored-850b2db783833ee216ea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Nidus de 4 cm em área motora, drenagem superficial: grau III",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grade III (classe B de Spetzler-Ponce)",
+            "locale": "fr",
+            "template": "documented-authored-45786bd6fd286af96782"
+          },
+          "note": {
+            "text": "Classe B : traitement multimodal individualisé (chirurgie, embolisation, radiochirurgie).",
+            "locale": "fr",
+            "template": "documented-authored-e4a1a00117ceabdfc661"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Nidus de 7 cm, eloquente, drenagem profunda: grau V",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grade V (classe C de Spetzler-Ponce)",
+            "locale": "fr",
+            "template": "documented-authored-2124b58cf4b59ed9adec"
+          },
+          "note": {
+            "text": "Classe C : en général, observation ; traiter en cas d’hémorragies répétées, de déficit progressif, d’anévrismes associés ou de symptômes de vol.",
+            "locale": "fr",
+            "template": "documented-authored-86a4e77392e055e9a1bc"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Nidus de 2 cm, área não eloquente, drenagem superficial: grau I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grad I (Spetzler-Ponce-Klasse A)",
+            "locale": "de",
+            "template": "documented-authored-74a2071733627f0f3fae"
+          },
+          "note": {
+            "text": "Klasse A: Die mikrochirurgische Resektion ist in der Regel die indizierte Behandlung.",
+            "locale": "de",
+            "template": "documented-authored-850b2db783833ee216ea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Nidus de 4 cm em área motora, drenagem superficial: grau III",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grad III (Spetzler-Ponce-Klasse B)",
+            "locale": "de",
+            "template": "documented-authored-45786bd6fd286af96782"
+          },
+          "note": {
+            "text": "Klasse B: individualisierte multimodale Behandlung (Operation, Embolisation, Radiochirurgie).",
+            "locale": "de",
+            "template": "documented-authored-e4a1a00117ceabdfc661"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Nidus de 7 cm, eloquente, drenagem profunda: grau V",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grad V (Spetzler-Ponce-Klasse C)",
+            "locale": "de",
+            "template": "documented-authored-2124b58cf4b59ed9adec"
+          },
+          "note": {
+            "text": "Klasse C: im Allgemeinen Beobachtung; Behandlung bei wiederholten Blutungen, progredientem Defizit, assoziierten Aneurysmen oder Stealsymptomen.",
+            "locale": "de",
+            "template": "documented-authored-86a4e77392e055e9a1bc"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Nidus de 2 cm, área não eloquente, drenagem superficial: grau I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grado I (classe A di Spetzler-Ponce)",
+            "locale": "it",
+            "template": "documented-authored-74a2071733627f0f3fae"
+          },
+          "note": {
+            "text": "Classe A: la resezione microchirurgica è di solito il trattamento indicato.",
+            "locale": "it",
+            "template": "documented-authored-850b2db783833ee216ea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Nidus de 4 cm em área motora, drenagem superficial: grau III",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grado III (classe B di Spetzler-Ponce)",
+            "locale": "it",
+            "template": "documented-authored-45786bd6fd286af96782"
+          },
+          "note": {
+            "text": "Classe B: trattamento multimodale individualizzato (chirurgia, embolizzazione, radiochirurgia).",
+            "locale": "it",
+            "template": "documented-authored-e4a1a00117ceabdfc661"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Nidus de 7 cm, eloquente, drenagem profunda: grau V",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grado V (classe C di Spetzler-Ponce)",
+            "locale": "it",
+            "template": "documented-authored-2124b58cf4b59ed9adec"
+          },
+          "note": {
+            "text": "Classe C: in generale, osservazione; trattare in caso di emorragie ripetute, deficit progressivo, aneurismi associati o sintomi di furto.",
+            "locale": "it",
+            "template": "documented-authored-86a4e77392e055e9a1bc"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Nidus de 2 cm, área não eloquente, drenagem superficial: grau I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الدرجة I (فئة Spetzler-Ponce A)",
+            "locale": "ar",
+            "template": "documented-authored-74a2071733627f0f3fae"
+          },
+          "note": {
+            "text": "الفئة A: يكون الاستئصال المجهري الجراحي هو العلاج الموصى به عادةً.",
+            "locale": "ar",
+            "template": "documented-authored-850b2db783833ee216ea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Nidus de 4 cm em área motora, drenagem superficial: grau III",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الدرجة III (فئة Spetzler-Ponce B)",
+            "locale": "ar",
+            "template": "documented-authored-45786bd6fd286af96782"
+          },
+          "note": {
+            "text": "الفئة B: علاج متعدد الوسائط مُفصَّل حسب الحالة (الجراحة، الانصمام، الجراحة الإشعاعية).",
+            "locale": "ar",
+            "template": "documented-authored-e4a1a00117ceabdfc661"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Nidus de 7 cm, eloquente, drenagem profunda: grau V",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الدرجة V (فئة Spetzler-Ponce C)",
+            "locale": "ar",
+            "template": "documented-authored-2124b58cf4b59ed9adec"
+          },
+          "note": {
+            "text": "الفئة C: عمومًا، المراقبة؛ يُعالج في حالات النزف المتكرر، أو العجز المتفاقم، أو تمددات الأوعية الدموية المصاحبة، أو أعراض السرقة الوعائية.",
+            "locale": "ar",
+            "template": "documented-authored-86a4e77392e055e9a1bc"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Nidus de 2 cm, área não eloquente, drenagem superficial: grau I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "I级（Spetzler-Ponce A类）",
+            "locale": "zh",
+            "template": "documented-authored-74a2071733627f0f3fae"
+          },
+          "note": {
+            "text": "A类：显微外科切除通常是有指征的治疗。",
+            "locale": "zh",
+            "template": "documented-authored-850b2db783833ee216ea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Nidus de 4 cm em área motora, drenagem superficial: grau III",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "III级（Spetzler-Ponce B类）",
+            "locale": "zh",
+            "template": "documented-authored-45786bd6fd286af96782"
+          },
+          "note": {
+            "text": "B类：个体化多模式治疗（手术、栓塞、放射外科）。",
+            "locale": "zh",
+            "template": "documented-authored-e4a1a00117ceabdfc661"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Nidus de 7 cm, eloquente, drenagem profunda: grau V",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "V级（Spetzler-Ponce C类）",
+            "locale": "zh",
+            "template": "documented-authored-2124b58cf4b59ed9adec"
+          },
+          "note": {
+            "text": "C级：一般观察；如有反复出血、进行性神经功能缺损、相关动脉瘤或盗血症状，则治疗。",
+            "locale": "zh",
+            "template": "documented-authored-86a4e77392e055e9a1bc"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Nidus de 2 cm, área não eloquente, drenagem superficial: grau I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "グレード I（Spetzler-Ponce Aクラス）",
+            "locale": "ja",
+            "template": "documented-authored-74a2071733627f0f3fae"
+          },
+          "note": {
+            "text": "クラスA：微小外科的切除が通常推奨される治療です。",
+            "locale": "ja",
+            "template": "documented-authored-850b2db783833ee216ea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Nidus de 4 cm em área motora, drenagem superficial: grau III",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "グレード III（Spetzler-Ponce Bクラス）",
+            "locale": "ja",
+            "template": "documented-authored-45786bd6fd286af96782"
+          },
+          "note": {
+            "text": "クラスB：個別化された多モダリティ治療（手術、塞栓術、定位放射線手術）。",
+            "locale": "ja",
+            "template": "documented-authored-e4a1a00117ceabdfc661"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Nidus de 7 cm, eloquente, drenagem profunda: grau V",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "グレード V（Spetzler-Ponce Cクラス）",
+            "locale": "ja",
+            "template": "documented-authored-2124b58cf4b59ed9adec"
+          },
+          "note": {
+            "text": "Cクラス：一般に経過観察；反復出血、進行性欠損、合併動脈瘤、または盗血症状がある場合は治療する。",
+            "locale": "ja",
+            "template": "documented-authored-86a4e77392e055e9a1bc"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Nidus de 2 cm, área não eloquente, drenagem superficial: grau I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "ग्रेड I (Spetzler-Ponce वर्ग A)",
+            "locale": "hi",
+            "template": "documented-authored-74a2071733627f0f3fae"
+          },
+          "note": {
+            "text": "वर्ग A: माइक्रोसर्जिकल रिसेक्शन आमतौर पर संकेतित उपचार होता है.",
+            "locale": "hi",
+            "template": "documented-authored-850b2db783833ee216ea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Nidus de 4 cm em área motora, drenagem superficial: grau III",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "ग्रेड III (Spetzler-Ponce वर्ग B)",
+            "locale": "hi",
+            "template": "documented-authored-45786bd6fd286af96782"
+          },
+          "note": {
+            "text": "वर्ग B: व्यक्तिगत बहु-विध उपचार (सर्जरी, एम्बोलाइज़ेशन, रेडियोसर्जरी).",
+            "locale": "hi",
+            "template": "documented-authored-e4a1a00117ceabdfc661"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Nidus de 7 cm, eloquente, drenagem profunda: grau V",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "ग्रेड V (Spetzler-Ponce वर्ग C)",
+            "locale": "hi",
+            "template": "documented-authored-2124b58cf4b59ed9adec"
+          },
+          "note": {
+            "text": "श्रेणी C: सामान्यतः, अवलोकन; बार-बार रक्तस्राव, प्रगतिशील न्यूनता, संबद्ध एन्यूरिज़्म, या स्टील लक्षणों में उपचार करें।",
+            "locale": "hi",
+            "template": "documented-authored-86a4e77392e055e9a1bc"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}
